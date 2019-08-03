@@ -1,0 +1,780 @@
+﻿html {
+    overflow-x: hidden;
+}
+
+::-moz-selection {
+    background-color: #362090;
+    color: #FFF;
+}
+
+::selection {
+    background-color: #275aab;
+    color: #FFF;
+}
+
+/*  General Style   ||-----------*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+small {
+    color: #9fa4af;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600 !important
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+p {
+    line-height: 30px !important;
+    color: #9fa4af;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400 !important;
+    color: #5aabe9;
+    line-height: 40px !important;
+    padding-top: .5em;
+    letter-spacing: -1px;
+}
+
+br {
+    line-height: 45px !important;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+}
+
+a, a:focus, a:active, a:link, img {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #323232;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
+
+a:hover {
+    color: #2859ab !important;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    color: #888;
+    outline: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 10px 15px;
+    transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    display: inline-block;
+}
+
+textarea {
+    height: 120px;
+}
+
+.lh-20 {
+    line-height: 20px !important;
+}
+
+.gig-text {
+    font-size: 50px !important;
+}
+
+.banner-wrapper {
+    min-height: 95vh;
+    background-repeat: no-repeat !important;
+    background-position: top right !important;
+}
+
+.banner-wrapper nav.scrolled {
+    position: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    padding: .5em 2em !important;
+    font-size: 14px !important;
+    width: 100%;
+}
+
+.banner-wrapper nav.scrolled .btn {
+    font-size: 14px !important;
+}
+
+.banner-wrapper nav.scrolled img {
+    max-width: 70%;
+}
+
+.container {
+    padding: 0 !important
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation-links li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.color-purple {
+    color: #55308e;
+    font-weight: 600;
+}
+
+.navigation-links li a {
+    color: #b1b1b1;
+}
+
+a.btn-purple, a.btn-white {
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    height: 60px;
+    color: #fff;
+    width: 185px;
+    font-weight: 600;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#255ead+0,371c8e+99 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #255ead;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #255ead 0%, #371c8e 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #255ead 0%, #371c8e 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #255ead 0%, #371c8e 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#255ead', endColorstr='#371c8e', GradientType=1);
+    /* IE6-9 */
+}
+
+a.btn-white {
+    background: #fff;
+    color: #000;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.contact-btn {
+    font-weight: 600;
+    transition: .5s;
+    border: none;
+    padding: 0 !important;
+    text-decoration: underline;
+}
+
+a.contact-btn:hover {
+    background: none;
+}
+
+li {
+    display: flex;
+}
+
+#contact-section h5 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+button#form-submit {
+    color: #fff !important;
+    background: #5b2d83;
+    background: linear-gradient(to right, #5b2d83 0, #a53d91 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b2d83', endColorstr='#a53d91', GradientType=1);
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    min-width: 110px;
+    min-height: 45px;
+    padding: 10px 20px !important;
+    overflow: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 13px #682f852e !important;
+    width: 100%;
+    border-radius: 5em;
+}
+
+a.down-btn img {
+    max-width: 80px;
+}
+
+.open-close-btn {
+    display: none;
+}
+
+.text-body {
+    font-size: 18px;
+    line-height: 1.7rem !important;
+    font-weight: 600;
+    padding-top: .5em;
+    color: #000 !important;
+}
+
+.big-title {
+    line-height: 3rem !important;
+}
+
+.row.align-items-center.py-4 {
+    height: 67vh;
+}
+
+.row.align-items-center.py-4 {
+    height: 67vh;
+}
+
+.navigation-links li a:hover {
+    color: #5aabe9;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.master-title {
+    font-size: 35px;
+    line-height: 45px !important;
+    color: #371d8f;
+    padding-bottom: 1em;
+}
+
+.master-text {
+    color: #657ba0;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    font-weight: 400;
+}
+
+.box-changers .icone {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5em;
+    background: #f3f2fb;
+    font-size: 2rem;
+    color: #326fc0;
+}
+
+.title-changer {
+    color: #657ba0;
+    font-size: 20px;
+    font-weight: bold !important;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 0 !important;
+    line-height: 100% !important;
+}
+
+.changers-infos p {
+    font-size: 14px;
+    color: #657ba0;
+    line-height: 20px !important;
+    padding-top: .5em;
+}
+
+.box-changers {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.changers-infos {
+    width: 75%;
+}
+
+.button-solutions {
+    border-radius: 5em !important;
+}
+
+.solutions-infos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.solutions-infos .title-changer {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700 !important;
+    color: #153a78;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.solutions-infos .changers-infos {
+    width: 100%;
+    text-align: center;
+}
+
+.box-solucoes>div {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.2em;
+    padding: 1em;
+    box-shadow: 2px 0 30px 10px hsla(0, 0%, 62%, 15%);
+    border-radius: 10px;
+    z-index: 1;
+    transition: .5s;
+    background-color: #fff;
+}
+
+.box-solucoes {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.box-solucoes .icone {
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.box-solucoes:first-child {
+    margin-top: -7em;
+}
+
+.box-solucoes:nth-child(3) {
+    margin-top: -7em;
+}
+
+.box-solucoes.active>div {
+    background: #1b71e4;
+    box-shadow: 2px 0 30px 10px hsla(214, 59%, 47%, 34%);
+}
+
+.box-solucoes.active .title-changer, .box-solucoes.active p {
+    color: #fff;
+}
+
+.box-solucoes>div:hover {
+    transition: .5s;
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+/* contact section */
+#contact a.btn-purple {
+    font-size: 13px;
+    margin-top: 1em;
+}
+
+#contact .master-title {
+    padding-bottom: 0em !important;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.contact-info svg {
+    color: #361f8f;
+    font-size: 20px;
+}
+
+.contact-info p {
+    padding-left: 1em;
+    color: #361e8f;
+}
+
+#contact form {
+    padding-right: 2em;
+}
+
+#contact form input, #contact form textarea {
+    border-radius: 0 !important;
+    font-size: 14px;
+}
+
+#contact form button {
+    font-size: 14px;
+    border-radius: 5em;
+    padding: 1em 2em !important;
+    color: #fff;
+    background: #265cac;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    text-decoration: none;
+}
+
+/* footer */
+.footer a, .footer p {
+    padding-bottom: 1em;
+    color: #fff;
+    margin: 0 !important;
+    line-height: 100% !important;
+}
+
+.footer nav {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.footer {
+    background: #371d8f;
+}
+
+.copyright {
+    background: #265cac;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 1em;
+}
+
+#solucoes {
+    padding-top: 13em;
+    background-image: url(../img/ways.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#valores {
+    padding-top: 9em;
+}
+
+.wave-bg {
+    background-image: url(../img/foot-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4em;
+    padding-bottom: 5em;
+}
+
+/* scroll banner */
+.mouse {
+    width: 40%;
+    height: auto;
+}
+
+.scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform, opacity;
+    opacity: 1;
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a.scroll-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .9;
+    background: #255ead;
+    background: -moz-linear-gradient(left, #255ead 0%, #371c8e 99%);
+    background: -webkit-linear-gradient(left, #255ead 0%, #371c8e 99%);
+    background: linear-gradient(to right, #255ead 0%, #371c8e 99%);
+    box-shadow: 0 0 15px #37208fad;
+}
+
+/* fades */
+.fadeInLeft {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes scroll {
+    0%, 20% {
+        transform: translateY(0) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("https://cdn.dribbble.com/users/563824/screenshots/4268258/untitled_180_3.gif") center no-repeat #fff;
+    background-size: 10%;
+}
+
+/* 
+@-webkit-keyframes Gradient {
+    colocar na div desejada:
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+} */
+/* landing educacao */
+#pontos-chave .master-title b {
+    font-size: 50px;
+}
+
+#pontos-chave svg, #suporte svg {
+    color: #361f8f;
+}

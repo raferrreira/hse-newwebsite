@@ -1,0 +1,214 @@
+/* 991px */
+@media screen and (max-width: 991px) {
+
+    .open-close-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .open-close-btn svg {
+        font-size: 32px;
+        color: #2859ab;
+    }
+
+    .banner-wrapper .navigation-links {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        position: absolute;
+        background: #fffffff7;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+        -webkit-box-shadow: 0 25px 50px -12px rgba(55, 32, 143, 0.33);
+        box-shadow: 0 25px 50px -12px rgba(55, 32, 143, 0.33);
+        border-top: 3px solid #2859aa;
+        padding: 1em 1em !important;
+    }
+
+    .banner-wrapper nav img {
+        max-width: 80%;
+        margin: 0;
+    }
+
+    .banner-wrapper nav {
+        position: relative;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+        background: #fff;
+    }
+
+    .banner-wrapper .navigation-links li {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .container.pt-4 {
+        padding-top: 0 !important;
+    }
+
+    .navigation-links li a {
+        color: #2956a9;
+    }
+
+    .banner-wrapper {
+        background-size: 60% !important;
+    }
+
+    img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    .box-solucoes:nth-child(3) {
+        margin-top: -0em;
+    }
+
+    .box-changers.solutions-infos,
+    .footer img {
+        padding-right: 15px !important;
+    }
+
+    #contact .row .col-md-8 {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        margin-top: 2em;
+    }
+
+    #contact .row .col-md-8 form {
+        padding-right: 0 !important
+    }
+
+    .links-list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .contact-list-infos {
+        text-align: center;
+    }
+
+    .links-list {
+        margin-top: 2em;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    #valores img {
+        max-width: 70%;
+        margin-top: 3em;
+    }
+}
+
+/* 580px */
+@media screen and (max-width: 580px) {
+    .row {
+        margin: 0 auto !important;
+    }
+
+    .pr-0,
+    .px-0 {
+        padding-right: 15px !important;
+    }
+
+    #valores .pl-5 {
+        padding-left: 15px !important;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    #gamechanger img {
+        max-width: 80%;
+    }
+
+    .pl-5,
+    .px-5 {
+        padding-left: 15px !important;
+    }
+
+    br {
+        display: none;
+        margin-right: 1em !important;
+    }
+
+    #pontos-chave {
+        margin-top: 5em;
+    }
+    
+    #pontos-chave .row .col-lg-7 {
+        order: 3;
+        margin-top: 3em;
+    }
+}
+
+/* 440px */
+@media screen and (max-width: 440px) {
+
+    #gamechanger .box-changers {
+        padding: 0;
+    }
+
+    .wrapper {
+        min-height: 100vh;
+    }
+
+    #gamechanger {
+        margin-top: 4em;
+    }
+
+    .banner-wrapper nav {
+        padding-left: 15px !important;
+    }
+
+    a.scroll-link {
+        display: none;
+    }
+
+    .banner-wrapper {
+        background: none !important
+    }
+
+    .box-changers img,
+    .footer img {
+        max-width: 70%;
+        padding-right: 0px !important
+    }
+
+    #gamechanger .changers-infos {
+        padding-left: 1em;
+    }
+
+    a.btn-purple,
+    a.btn-white {
+        font-size: 14px;
+    }
+}
