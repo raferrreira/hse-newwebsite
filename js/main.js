@@ -53,3 +53,24 @@ $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
 });
+
+
+$('.parceiros').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
